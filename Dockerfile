@@ -31,7 +31,7 @@ RUN EXTRA_APT_PACKAGES=; \
     rm -rf /var/lib/apt/lists/*
 
 ARG NB_USER=athena
-ARG NB_UID=1000730000
+ARG NB_UID=1000
 ARG HOME=/home/athena
 
 RUN adduser --disabled-password \
