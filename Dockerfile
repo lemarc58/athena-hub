@@ -71,4 +71,4 @@ ARG PIP_TOOLS=
 RUN test -z "$PIP_TOOLS" || pip install --no-cache pip-tools==$PIP_TOOLS
 
 USER ${NB_USER}
-CMD ["jupyterhub", "--config", "/usr/local/etc/jupyterhub/jupyterhub_config.py", "&>>", "/var/log/jupyterhub.log"]
+CMD ["jupyterhub", "--config", "/usr/local/etc/jupyterhub/jupyterhub_config.py", "&>>", "/tmp/jupyterhub.log"]
